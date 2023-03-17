@@ -18,8 +18,12 @@ cadena1="+50 EMPRESAS CONFÍAN EN NOSOTROS\n Miles de estudiantes han mejorado s
 print("***************************\n minusculas\n"+ str (cadena1.lower()))
 print("***************************\n MAYUSCULAS\n"+ str (cadena1.upper()))
 
+name='lener'
+last='Crisologo'
+dni=20202323
 
-moon_facts = ["The Moon is drifting away from the Earth.1", "On average, the Moon is moving about 4cm every year 2"] 
-    '\n'.join(moon_facts) 
-    'The Moon is drifting away from the Earth.3\n On average, the Moon is moving about 4cm every year4'
-print(moon_facts)
+text_fromat='''
+Nombre  y Apellido: {name} {last}
+Dni: {dni}
+'''
+print(text_fromat.format(name=name, last=last, dni=dni))
